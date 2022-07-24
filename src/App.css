@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('./background.jpg');
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 11px gray;
 }
+.login-div input {
+  border: 2px solid black;
+  width: 250px;
+  border-radius: 10px;
+}
+.login-div {
+  margin-top: 20px;
+}
+.login-btn {
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.login-btn:hover {
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.create-account {
+  margin-top: 10px;
+}
+.login-button {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    width: 100%;
+}
+.create-acc-btn {
+  border-bottom: 2px solid black;
+  color: black;
+}
+.create-acc-btn:hover {
+  border-bottom: 2px solid black;
+  color: black;
+  text-decoration: none;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.home-container {
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ .home-container-2 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 1%;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 11px gray;
+}
+.home-heading {
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 1px solid white;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.fa-check {
+  color: green;
+  cursor: pointer;
+}
+.fa-trash-can {
+  color: red;
+  cursor: pointer;
+}
+.home-table-sort {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.btm-div {
+  padding: 5px 20px;
+}
+.home-add-button {
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home-add-button:hover {
+  border: 2px solid white;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.home-logout-button {
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.home-logout-button:hover {
+  border: 2px solid white;
+  padding: 5px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  text-decoration: none;
+}
+.home-modal-add-button {
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
